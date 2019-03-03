@@ -1,5 +1,5 @@
 body{
-    background-color: #f1f1f1;
+    background-color: #eeeeee;
 }
 
 .nav{
@@ -13,13 +13,27 @@ body{
     .nav ul{
         padding-left: 20px;
         list-style: none;}
+    .nav a{
+        color: #5b5b5b;
+        text-decoration: none;}
+    .nav a:hover{
+        color: #000000;
+        text-decoration: none;
+    }
     .nav h1{
         color: #b094c7;
         font-size: 1.6em;}
     .nav .copyright{
         bottom: 10px;
+        color: #9e9e9e;
         left: 3%;
         position: fixed;}
+    .nav .background-logo{
+        opacity: 0.1;
+        height: 110%;
+        position: fixed;
+        left: -130px;
+        top: -50px;}
 
 
 /* Masonry grid css */
@@ -30,6 +44,15 @@ body{
 .grid-item img{ 
     width: 100%;}
 
-.grid-item--width2 { width: 66.666% }
+.grid-item--width2 { width: 66% }
 
 .grid-sizer { width: 33%; }
+
+@media screen and (min-width: 1440px) {
+    /* 5 columns for larger screens */
+    .grid-sizer { width: 20%; }
+    .grid-item { 
+        width: 20%;
+        padding: 10px;}
+    .grid-item--width2 { width: 40% }
+  }
