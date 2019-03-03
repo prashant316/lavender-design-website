@@ -1,0 +1,35 @@
+body{
+    background-color: #f1f1f1;
+}
+
+.nav{
+    height: 100%;
+    position: fixed;
+    display: inherit;}
+    .nav .centered-content{
+        left: 3%;
+        top: 30%;
+        position: fixed;}
+    .nav ul{
+        padding-left: 20px;
+        list-style: none;}
+    .nav h1{
+        color: #b094c7;
+        font-size: 1.6em;}
+    .nav .copyright{
+        bottom: 10px;
+        left: 3%;
+        position: fixed;}
+
+
+/* Masonry grid css */
+.grid-item { 
+    width: 33%;
+    padding: 10px; }
+
+.grid-item img{ 
+    width: 100%;}
+
+.grid-item--width2 { width: 66.666% }
+
+.grid-sizer { width: 33%; }
